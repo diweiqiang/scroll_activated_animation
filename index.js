@@ -4,7 +4,7 @@ window.addEventListener("scroll", throttleScroll, false);
 
 function throttleScroll(e) {
     if (isScrolling == false) {
-        //会一直循环执行scrolling()，即使没没有scroll,但是比监听scorll还是要好一些；
+        
         window.requestAnimationFrame(function() {
             scrolling(e);
             isScrolling = false;
